@@ -5,9 +5,11 @@
 
 <head meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"></link>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
 </head>
 
 <body>
@@ -17,65 +19,87 @@
         <h1>Play Crystal Collector!</h1>
         <div class="row">
             <div class="col-md-12">
+            </div>
+        </div>
+    </div>
 
-                <!-- Instrucitons -->
-                <div class="row">
-                    <div class="col-sm-6">
-                        <!-- <p>These are your instructions</p> -->
-                        <div class="card" style="width: 40rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Yay! Here are some instructions. Read them.</h5>
+    <!-- Instrucitons -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- <p>These are your instructions</p> -->
+                <div class="card" style="width: 40rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h5 class="card-title">
+                                    <strong>Here are some instructions.</strong>
+                                </h5>
                                 <p class="card-text">1. There is a random number at the start of the game.</p>
                                 <p class="card-text">2. There are 4 crystals, when you click on a crystal you will add a specific amount of points
                                     to your total score.</p>
-                                <p class="card-text">3. You win by matching the computer generated number. You lose by going over the number.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="card-text">3. You win by matching the computer generated number. You lose by going over the number.
+                                </p>
                                 <p class="card-text">4. The value of each crystal is hidden until you click on them.</p>
                                 <p class="card-text">5. Every time the game starts the values of the crystals change.</p>
                             </div>
                         </div>
-                        <!-- Game Number -->
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="row"></div>
-                                <div id="gameNumber">
-                                    0
-                                </div>
-                                <div class="col-sm-3">
-                                    <div id="win">
-                                        <div>Win: 0</div>
-                                    </div>
-                                    <div id="lose">
-                                        <div>Lose: 0</div>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                <!-- Crystals -->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div>
-                                            <img id="diamond" src="assets/images/diamond.png">
-                                            <img id="emerald" src="assets/images/emerald.png">
-                                            <img id="ruby" src="assets/images/ruby.png">
-                                            <img id="sapphire" src="assets/images/sapphire.png">
-                                        </div>
+    <!-- Game Number - why does the first row div have to be at the bottom? -->
+    <div class="container">
+        <div class="row">
+            <!-- Why does this col control the win and lose? shouldn't the col below do that? -->
+            <div class="col-2">
+                <div id="gameNumber">
+                    0
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- <div class="row"> -->
+                    <div id="winandlose">
+                        <p>Win:
+                            <span id="win">0</span>
+                        </p>
+                        <p>Lose:
+                            <span id="lose">0</span>
+                        </p>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
 
-                                        <!-- Total Score -->
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p>Your total score is:</p>
+    <!-- Crystals -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="crystals">
+                    <img id="diamond" src="assets/images/diamond.png">
+                    <img id="emerald" src="assets/images/emerald.png">
+                    <img id="ruby" src="assets/images/ruby.png">
+                    <img id="sapphire" src="assets/images/sapphire.png">
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                                <!-- Score -->
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div id="score">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <!-- Total Score -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <p id="totalscore">Your total score is:</p>
+
+                <!-- Score -->
+                <div class="row">
+                    <div class="col-2">
+                        <div id="score">
                         </div>
                     </div>
                 </div>

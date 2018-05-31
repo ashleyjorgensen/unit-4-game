@@ -1,4 +1,5 @@
 
+// Variables 
 var diamondPoints = 1;
 var emeraldPoints = 4;
 var rubyPoints = 6;
@@ -8,14 +9,16 @@ var gameNumber = 120;
 var win = 0;
 var lose = 0;
 
+// Start Game Function - this is what runs everytime you start the game.
+
 function startGame()
 {
-    diamondPoints = parseInt(Math.random() * 12) + 1;
-    emeraldPoints = parseInt(Math.random() * 12) + 1;
-    rubyPoints = parseInt(Math.random() * 12) + 1;
-    sapphirePoints = parseInt(Math.random() * 12) + 1;
+    diamondPoints = Math.floor(Math.random() * 12) + 1;
+    emeraldPoints = Math.floor(Math.random() * 12) + 1;
+    rubyPoints = Math.floor(Math.random() * 12) + 1;
+    sapphirePoints = Math.floor(Math.random() * 12) + 1;
     myPoints = 0;
-    gameNumber = parseInt(Math.random() * 102) + 19;
+    gameNumber = Math.floor(Math.random() * 102) + 19;
     $("#score").html(myPoints);
     $("#gameNumber").html(gameNumber);
 }
@@ -33,10 +36,11 @@ function updateGame()
     }
 
     $("#score").html(myPoints);
-    $("#win").html("Win: " + win);
-    $("#lose").html("Lose: " + lose);
+    $("#win").html(win);
+    $("#lose").html(lose);
 }
 
+// on-click function
 
 $(document).ready(function() {
     startGame();

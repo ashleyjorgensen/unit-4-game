@@ -1,17 +1,26 @@
 
+* {
+    border: 1px solid black;
+}
 body {
-   background: url("../images/white_wall_hash/white_wall_hash.png")
+   background: url("../images/agsquare/agsquare_@2X.png")
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .card-body {
     background-color: #D3D3D3;
     border: 1px solid #D3D3D3; 
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #gameNumber {
-    background-color: #ffaa00; 
+    background-color:#b9f489; 
     color: black;
     width: 100px;
     height: 80px;
@@ -21,28 +30,61 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#totalscore {
+    background-color:#fbff93;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
       
 #score {
         background-color: yellow;
-        width: 100px;
+        width: 250px;
         height: 80px;
         font-size: 40px;
         text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: black;
         border-radius: 10px;
+        font-family: 'Raleway', sans-serif;
     }
 
-#win , #lose {
-    float: left; 
-    background-color: #ffda49;
-    border: 1px solid #ffda49;
+#winandlose {
+    background-color:#addfff;
+    border: 1px solid #addfff;
+    width: 100px;
+    height: 80px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
-/* #lose {
-    float: right; 
-    background-color: #ffda49;
-    border: 1px solid #ffda49;
-} */
+#crystals {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+}
+
+@media all and (max-width: 800px;) {
+        display: inline; 
+    }
